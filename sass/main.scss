@@ -1,0 +1,130 @@
+// Variables
+
+$primary-color: #fc7614;
+
+$primary-ff: "Overpass", sans-serif;
+
+// General
+
+html,
+body,
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: $primary-ff;
+}
+
+body {
+  background-color: #131518;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.rating-comp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 327px;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 15px;
+
+  padding: 24px;
+}
+
+.rating-comp__header {
+  margin: 0px 0px 16px 0px;
+
+  background-color: #262e38;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  // center the start inside this div
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-comp__body h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30.38px;
+}
+
+.rating-comp__body p {
+  color: #969fad;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 10px;
+}
+
+.rating-comp__rate-numbers {
+  margin-top: 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.rating-comp__rate-numbers span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #262e38;
+
+  color: #7c8798;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+
+  cursor: pointer;
+}
+
+.rating-comp__submit {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 24px;
+
+  background-color: $primary-color;
+
+  border-radius: 22.5px;
+
+  color: #fff;
+
+  width: 100%;
+
+  border: none;
+
+  height: 45px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.86667px;
+}
