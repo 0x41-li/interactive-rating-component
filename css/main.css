@@ -27,12 +27,16 @@ main {
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
   border-radius: 15px;
   padding: 24px;
+  display: none;
 }
 @media screen and (min-width: 1024px) {
   .rating-comp {
     width: 416px;
     padding: 32px;
   }
+}
+.rating-comp.hide {
+  display: none;
 }
 
 .rating-comp__header {
@@ -111,8 +115,9 @@ main {
   background-color: #7c8798;
   color: #fff;
 }
-.rating-comp__rate-numbers span:active {
+.rating-comp__rate-numbers span.chosen {
   background-color: #fc7614;
+  color: #fff;
 }
 
 .rating-comp__submit {

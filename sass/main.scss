@@ -49,6 +49,12 @@ main {
     width: 416px;
     padding: 32px;
   }
+
+  &.hide {
+    display: none;
+  }
+
+  display: none;
 }
 
 .rating-comp__header {
@@ -137,8 +143,9 @@ main {
     color: #fff;
   }
 
-  &:active {
+  &.chosen {
     background-color: $primary-color;
+    color: #fff;
   }
 }
 
