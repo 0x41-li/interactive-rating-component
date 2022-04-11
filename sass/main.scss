@@ -44,10 +44,15 @@ main {
   border-radius: 15px;
 
   padding: 24px;
+
+  @media screen and (min-width: 1024px) {
+    width: 416px;
+    padding: 32px;
+  }
 }
 
 .rating-comp__header {
-  margin: 0px 0px 16px 0px;
+  margin-bottom: 16px;
 
   background-color: #262e38;
 
@@ -59,6 +64,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 30px;
+  }
 }
 
 .rating-comp__body h1 {
@@ -66,6 +75,11 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 30.38px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 35.45px;
+  }
 }
 
 .rating-comp__body p {
@@ -74,6 +88,14 @@ main {
   font-weight: 400;
 
   margin-top: 10px;
+
+  line-height: 22px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 7px;
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 .rating-comp__rate-numbers {
@@ -101,15 +123,31 @@ main {
   line-height: 24px;
 
   cursor: pointer;
+
+  transition: all 0.4s;
+
+  @media screen and (min-width: 1024px) {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: #7c8798;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: $primary-color;
+  }
 }
 
 .rating-comp__submit {
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 24px;
+  margin-top: 32px;
 
   background-color: $primary-color;
 
@@ -127,4 +165,18 @@ main {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1.86667px;
+
+  cursor: pointer;
+
+  transition: all 0.4s;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  &:active {
+    color: $primary-color;
+    background-color: #fff;
+  }
 }
