@@ -27,6 +27,8 @@ main {
   height: 100vh;
 }
 
+// Rating Comp
+
 .rating-comp {
   position: absolute;
   top: 50%;
@@ -54,7 +56,6 @@ main {
     display: none;
   }
 
-  display: none;
 }
 
 .rating-comp__header {
@@ -186,4 +187,76 @@ main {
     color: $primary-color;
     background-color: #fff;
   }
+}
+
+// Thank you Comp
+
+.thank-you-comp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 327px;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 15px;
+
+  padding: 24px;
+
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    width: 416px;
+    padding: 32px;
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.thank-you-comp .thank-you-illu {
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-selected-p {
+  color: $primary-color;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+
+  padding: 5px 12px;
+
+  background-color: #262e38;
+
+  border-radius: 22.5px;
+
+  margin-bottom: 24px;
+
+  display: inline-block;
+}
+
+.thank-you-comp h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.thank-you-message {
+  margin-top: 10px;
+  color: #969fad;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
