@@ -175,6 +175,26 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .thank-you-comp .thank-you-illu {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .thank-you-comp .thank-you-illu img:nth-child(1) {
+    display: none;
+  }
+}
+
+.thank-you-comp .thank-you-illu img:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .thank-you-comp .thank-you-illu img:nth-child(2) {
+    display: block;
+  }
+}
 
 .rating-selected-p {
   color: #fc7614;
@@ -187,12 +207,23 @@ main {
   margin-bottom: 24px;
   display: inline-block;
 }
+@media screen and (min-width: 1024px) {
+  .rating-selected-p {
+    margin-bottom: 32px;
+  }
+}
 
 .thank-you-comp h2 {
   color: #fff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .thank-you-comp h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
 }
 
 .thank-you-message {
@@ -201,6 +232,12 @@ main {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .thank-you-message {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
